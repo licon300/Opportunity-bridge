@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Opportunity Bridge</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="nav">
+  <h2>Opportunity Bridge</h2>
+
+  <div>
+    <a href="#scholarships">Scholarships</a>
+    <a href="#events">Events</a>
+    <a href="#reviews">Reviews</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <a class="btn" href="https://chat.whatsapp.com/E7Q3u0gsDHQLneSXD3XUtn?text=I want to register">WhatsApp</a>
+</header>
+
+<section class="hero" data-aos="zoom-in">
+  <h1>Your Bridge To Every Opportunities</h1>
+  <p>Scholarships • Jobs • Internships • Internships</p>
+</section>
+
+<section class="stats" data-aos="fade-up">
+  <div>5000+ Students</div>
+  <div>120+ Scholarships</div>
+  <div>80+ Events</div>
+</section>
+
+<section id="scholarships">
+  <h2>Scholarships</h2>
+  <div id="scholarList"></div>
+</section>
+
+<section id="events">
+  <h2>Events</h2>
+  <div id="eventList"></div>
+</section>
+
+<section id="reviews">
+  <h2>Reviews</h2>
+
+  <div id="reviewList"></div>
+
+  <input id="name" placeholder="Name">
+  <textarea id="message" placeholder="Review"></textarea>
+  <button onclick="addReview()">Submit</button>
+</section>
+
+<footer>
+  <p>© Opportunity Bridge 2026</p>
+</footer>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+<!-- Firebase Config -->
+<script src="firebase.js"></script>
+
+<!-- Main App Logic -->
+<script src="app.js"></script>
+
+</body>
+</html> 
